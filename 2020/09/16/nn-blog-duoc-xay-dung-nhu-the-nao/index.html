@@ -7,21 +7,21 @@
 <h1 id="Thi-Hexo-la-cai-gi"><a href="#Thi-Hexo-la-cai-gi" class="headerlink" title="Thì Hexo là cái gì???"></a>Thì Hexo là cái gì???</h1><p><code>Hexo</code> là một blog framework mạnh mẽ, nó tạo static web một cách đơn giản và nhanh chóng hoàn toàn bằng <code>NodeJS</code>. Bạn có thể viết bài bằng <code>Markdown</code> hoặc các markup languages khác.</p>
 <h1 id="De-bat-tay-vao-thi-chung-ta-can-chuan-bi"><a href="#De-bat-tay-vao-thi-chung-ta-can-chuan-bi" class="headerlink" title="Để bắt tay vào thì chúng ta cần chuẩn bị"></a>Để bắt tay vào thì chúng ta cần chuẩn bị</h1><p><strong>1. NodeJS</strong></p>
 <p>Hiện tại phiên bản NodeJS mình đang dùng là <code>v12.18.3</code>.<br>Mình khuyên là các bạn nên cài NodeJS <code>&gt;= 12.0</code></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nn@ngoann:~/ngoann_blog$ node -v</span><br><span class="line">v12.18.3</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nn@ngoann:~/ngoann_blog$ node -v</span><br><span class="line">v12.18.3</span><br></pre></td></tr></table></figure>
 
 <p><strong>2. Tài khoản <code>github</code></strong></p>
 <p>Cái này thì thôi mình không hướng dẫn các bạn đăng ký, các bạn lên trang chủ <a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a> tìm hiểu nhé.</p>
 <h1 id="Tien-hanh-cai-dat"><a href="#Tien-hanh-cai-dat" class="headerlink" title="Tiến hành cài đặt"></a>Tiến hành cài đặt</h1><h2 id="Cai-dat-Hexo"><a href="#Cai-dat-Hexo" class="headerlink" title="Cài đặt Hexo"></a>Cài đặt Hexo</h2><p>Vì <strong>Hexo</strong> cung cấp <code>command-line</code> nên ở đây mình sẽ thêm flag <code>-g</code> để có thể sử dụng mà <code>cli</code> <strong>Hexo</strong> cung cấp ở mức <code>global</code> (hiểu nôm na là dùng ở chỗ nào trên máy cũng được)</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 
 <p>Khi cài xong để tạo project mới bạn chỉ cần chạy lệnh</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init ngoann_blog</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init ngoann_blog</span><br></pre></td></tr></table></figure>
 
 <p>Sau đó cài <code>dependencies</code> cho project</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ngoann_blog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ngoann_blog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 
 <p>Xong xuôi rồi thì bật server lên thôi</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>Và đây là kết quả khi vào địa chỉ <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a></p>
 <p><img src="/assets/Hexo.png" alt="Hexo demo" title="Hexo demo"></p>
@@ -30,42 +30,42 @@
 <p>Theme của <code>NN-Blog</code> mình đang dùng là <a target="_blank" rel="noopener" href="https://github.com/mrcore/hexo-theme-Anatole-Core">Anatole-Core</a>.</p>
 <p>Khi chọn được theme ưng con mắt rồi thì các bạn thực hiện như sau</p>
 <p><strong><em>(Tùy vào mỗi theme sẽ có cách cài đặt khác, bạn nên vào trang github theme đó đọc hướng dẫn nhé)</em></strong></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ngoann_blog</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/mrcore/hexo-theme-Anatole-Core.git themes/anatole-core</span><br><span class="line">$ npm install hexo-renderer-pug --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ngoann_blog</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/mrcore/hexo-theme-Anatole-Core.git themes/anatole-core</span><br><span class="line">$ npm install hexo-renderer-pug --save</span><br></pre></td></tr></table></figure>
 
 <p>Tiếp theo là mở file <code>_config.yml</code> rồi sửa <code>theme: anatole-core</code> để  nhận theme mới vừa tải về.</p>
 <p>OK, restart server nào.</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>Thôi phần kết quả này mình không chụp ảnh nữa… các bạn tự tận hưởng nhé.</p>
 <h2 id="Tao-bai-viet-nhu-the-nao"><a href="#Tao-bai-viet-nhu-the-nao" class="headerlink" title="Tạo bài viết như thế nào?"></a>Tạo bài viết như thế nào?</h2><p>Ở trên <code>documentation</code> của <code>Hexo</code> hướng dẫn như thế này?</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><strong>title</strong>: Cái này thì không nói nhá, nó chính là tiêu đề của bài viết</li>
 <li><strong>layout</strong>: Có 3 loại layout là <code>post</code>, <code>page</code>, <code>draft</code></li>
 </ul>
 <p>Mình ví dụ luôn nhá, mình sẽ tạo 1 bài viết có tiêu đề là <strong>“NN-Blog được xây dựng như thế nào?”</strong> thì lệnh tạo sẽ là:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nn@ngoann:~/ngoann_blog$ hexo new post <span class="string">&quot;NN-Blog được xây dựng như thế nào?&quot;</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Created: ~/ngoann_blog/<span class="built_in">source</span>/_posts/NN-Blog-duoc-xay-dung-nhu-the-nao.md</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nn@ngoann:~/ngoann_blog$ hexo new post <span class="string">&quot;NN-Blog được xây dựng như thế nào?&quot;</span></span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Created: ~/ngoann_blog/<span class="built_in">source</span>/_posts/NN-Blog-duoc-xay-dung-nhu-the-nao.md</span><br></pre></td></tr></table></figure>
 
 <p>Đấy, khi chạy xong nó sẽ tự tạo ra file <code>N-Blog-duoc-xay-dung-nhu-the-nao.md</code> có nội dung là:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: NN-Blog được xây dựng như thế nào?</span><br><span class="line">date: 2020-09-16 21:10:32</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">NN-Blog</span> <span class="string">được</span> <span class="string">xây</span> <span class="string">dựng</span> <span class="string">như</span> <span class="string">thế</span> <span class="string">nào?</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2020-09-16 21:10:32</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 
 <p>Dưới dấu <code>---</code> thứ 2 là phần nội dung và sẽ sử dụng cú pháp của Markdown (<a target="_blank" rel="noopener" href="https://www.markdownguide.org/basic-syntax/">https://www.markdownguide.org/basic-syntax/</a>)</p>
 <p>Để mình ví dụ nhá</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: NN-Blog được xây dựng như thế nào?</span><br><span class="line">date: 2020-09-16 21:10:32</span><br><span class="line">tags:</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># Mở đầu chào nhau cái nhỉ</span><br><span class="line"></span><br><span class="line">Chào mừng bạn đã đến với &#96;NN-Blog&#96;</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">NN-Blog</span> <span class="string">được</span> <span class="string">xây</span> <span class="string">dựng</span> <span class="string">như</span> <span class="string">thế</span> <span class="string">nào?</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2020-09-16 21:10:32</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mở đầu chào nhau cái nhỉ</span></span><br><span class="line"></span><br><span class="line"><span class="string">Chào</span> <span class="string">mừng</span> <span class="string">bạn</span> <span class="string">đã</span> <span class="string">đến</span> <span class="string">với</span> <span class="string">`NN-Blog`</span></span><br></pre></td></tr></table></figure>
 
 <p>Và đây là kết quả:</p>
 <p><img src="/assets/Screenshot_from_2020-09-16_22-58-36.png" alt="Screenshot from 2020-09-16 22-58-36 demo"></p>
 <p>Thì đó, nom na là như vậy, bạn hãy vào địa chỉ <a target="_blank" rel="noopener" href="https://www.markdownguide.org/basic-syntax/">này</a> để biết thêm về <code>Markdown</code> nhá.</p>
 <h2 id="Deploy-len-github"><a href="#Deploy-len-github" class="headerlink" title="Deploy lên github"></a>Deploy lên github</h2><p>Đầu tiên bạn tạo 1 repo trên github theo định dạng <code>&lt;username-github&gt;.github.io</code><br>Ví dụ: github username của mình là <code>ngoann</code> thì mình sẽ tạo repo có tên là <code>ngoann.github.io</code></p>
 <p>Sau đó mở file <code>_config.yml</code> lên và sửa thành như sau</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo: https://github.com/ngoann/ngoann.github.io.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://github.com/ngoann/ngoann.github.io.git</span></span><br></pre></td></tr></table></figure>
 
 <p>Thì để deploy được lên github thì bạn phải cài thêm plugin <code>hexo-deployer-git</code> nữa:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git -save</span><br></pre></td></tr></table></figure>
 
 <p>Khi cài xong chạy tiến hành <code>build</code> và <code>deploy</code> lên github thôi</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>Trong quá trình deploy sẽ có hỏi thông tin github, bạn cứ nhập bình thường là được.</p>
 <p>Tèn ten và đây là kết quả: <a href="http://ngoann.github.io/">http://ngoann.github.io/</a></p>
